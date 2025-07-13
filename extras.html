@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tutorial</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilos en CSS</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+
   <header>
-    <h1>Información adicional y conceptos clave</h1>
+    <h1>¿Cómo aplicar estilos con CSS?</h1>
   </header>
 
   <nav>
@@ -21,71 +22,122 @@
   </nav>
 
   <main>
-          <div class="contenido">
-        <section class="bloque">
-        <h2>¿Qué es un archivo .html?</h2>
-        <p>Un archivo <code>.html</code> es un documento de texto que contiene código HTML, el lenguaje que usan los navegadores para mostrar páginas web.</p>
-        <p>Visual Studio Code es un editor de código que facilita escribir y organizar este tipo de archivos, con colores y ayudas automáticas.</p>
-        <p><strong>Atajo útil:</strong> En VS Code, escribe <code>!</code> y presiona Enter para crear la estructura base HTML automáticamente.</p>
-        </section>
+  <div class="contenido">
+    <section class="bloque">
+  <h2>Concepto</h2>
+  <p>CSS (Cascading Style Sheets) es un lenguaje utilizado para describir el estilo visual de una página web escrita en HTML. Permite definir cómo se verá cada parte del sitio, incluyendo colores, fuentes, márgenes, alineación, tamaños y distribución de los elementos.</p>
+  <p>Gracias a CSS podemos separar el contenido (HTML) de la presentación (estilo), facilitando la personalización y el mantenimiento del sitio web.</p>
+  <p><strong>Ejemplo de lo que se puede hacer con CSS:</strong></p>
+  <ul>
+    <li>Cambiar el fondo de una página.</li>
+    <li>Estilizar textos con colores y fuentes personalizadas.</li>
+    <li>Organizar elementos en columnas o filas.</li>
+    <li>Agregar bordes, sombras y transiciones visuales.</li>
+    <li>Hacer que el sitio se vea bien en diferentes tamaños de pantalla.</li>
+  </ul>
+</section>
 
-        <section class="bloque">
-        <h2>Estructura básica de un documento HTML</h2>
-        <ul>
-            <li><code>&lt;html&gt;</code>: Raíz del documento.</li>
-            <li><code>&lt;head&gt;</code>: Información no visible para el usuario, como título y configuraciones.</li>
-            <li><code>&lt;title&gt;</code>: Texto que aparece en la pestaña del navegador.</li>
-            <li><code>&lt;body&gt;</code>: Contenido visible en la página.</li>
-        </ul>
-        <p>Esta estructura es la base mínima para que cualquier navegador pueda interpretar y mostrar tu página.</p>
-        </section>
+    <section class="bloque">
+      <h2>¿Qué necesitamos para aplicar estilos?</h2>
+      <p>Para aplicar los estilos necesitamos un archivo CSS y etiquetas que dividan nuestro código, como <code>body</code>, <code>div</code>, <code>section</code>, <code>main</code>, etc. Además, debemos vincular el CSS usando la etiqueta <code>&lt;link&gt;</code>, así:</p>
+      <a href="a8.png" target="_blank"><img src="a8.png" alt="Ejemplo de link CSS"></a>
+    </section>
 
-        <section class="bloque">
-        <h2>Encabezados en HTML</h2>
-        <p>HTML ofrece seis niveles de encabezados, del <code>&lt;h1&gt;</code> (más importante) al <code>&lt;h6&gt;</code> (menos importante). Sirven para organizar el contenido jerárquicamente.</p>
-        <p>Ejemplo visual:</p>
-        <h1>Encabezado h1</h1>
-        <h2>Encabezado h2</h2>
-        <h3>Encabezado h3</h3>
-        <h4>Encabezado h4</h4>
-        <h5>Encabezado h5</h5>
-        <h6>Encabezado h6</h6>
-        </section>
+    <section class="bloque">
+      <h2>¿Cómo aplicar los estilos?</h2>
+      <p>Dentro del archivo CSS, usaremos las etiquetas HTML como selectores. Así se aplica estilo a distintos elementos:</p>
+      <a href="a9.png" target="_blank"><img src="a9.png" alt="Ejemplo CSS"></a>
+    </section>
 
-        <section class="bloque">
-        <h2>Diferencia entre &lt;p&gt; y &lt;br&gt;</h2>
-        <p>La etiqueta <code>&lt;p&gt;</code> define un párrafo completo, con margen arriba y abajo.</p>
-        <p>La etiqueta <code>&lt;br&gt;</code> solo inserta un salto de línea sin crear un nuevo párrafo.</p>
-        <p><strong>Ejemplos:</strong></p>
-        <pre>
-        &lt;p&gt;Hola&lt;br&gt;mundo&lt;/p&gt;
-        </pre>
-        <p>Resultado: "Hola" y "mundo" en líneas separadas pero dentro del mismo párrafo.</p>
-        <pre>
-        &lt;p&gt;Hola mundo&lt;/p&gt;
-        </pre>
-        <p>Resultado: Texto continuo en un solo párrafo.</p>
-        </section>
- 
-        <section class="bloque">
-        <h2>Etiqueta &lt;img&gt; y sus atributos</h2>
-        <p>La etiqueta <code>&lt;img&gt;</code> inserta imágenes. Sus atributos principales son:</p>
-        <ul>
-            <li><code>src</code>: Ruta o URL de la imagen.</li>
-            <li><code>alt</code>: Texto alternativo que se muestra si la imagen no carga.</li>
-            <li><code>width</code> y <code>height</code>: Ancho y alto de la imagen en píxeles.</li>
-        </ul>
-        <p>Ejemplo:</p>
-        <pre>
-        &lt;img src="foto.png" alt="Descripción de la imagen" width="300"&gt;
-        </pre>
-        <p>Si la imagen no carga, el navegador muestra el texto del atributo <code>alt</code>.</p>
-        <p><strong>Nota:</strong> Es buena práctica siempre incluir el atributo <code>alt</code> para accesibilidad.</p>
-        </section>
-        </div>
-  </main>
+    <section class="bloque">
+        <h2><center>Etiquetas en CSS</center></h2>
+        <h2><code>body</code></h2>
+        <p>El selector <code>body</code> aplica estilos al cuerpo completo del documento. Puedes cambiar el color de fondo, el tipo de letra, márgenes y más.</p>
+        <p><strong>Ejemplo:</strong> <code>body { background-color: #f4f4f4; }</code></p>
+        <h2><code>header</code></h2>
+        <p>Representa el encabezado de la página. En CSS se usa para cambiar colores, alineación de texto o aplicar márgenes y rellenos.</p>
+        <p><strong>Ejemplo:</strong> <code>header { background-color: #37474f; color: white; }</code></p>
+        <h2><code>nav</code></h2>
+        <p>Define la barra de navegación. Con CSS se puede cambiar el fondo, alinear enlaces, aplicar espacio entre ellos y efectos visuales.</p>
+        <p><strong>Ejemplo:</strong> <code>nav ul { display: flex; gap: 20px; }</code></p>
+        <h2><code>main</code></h2>
+        <p>Contiene el contenido principal de la web. En CSS se estiliza para agregar márgenes, espaciado interno y organización del contenido.</p>
+        <p><strong>Ejemplo:</strong> <code>main { padding: 20px; }</code></p>
+        <h2><code>section</code></h2>
+        <p>Sirve para dividir contenido en secciones temáticas. Con CSS puedes personalizar su fondo, bordes, espacios y sombras.</p>
+        <p><strong>Ejemplo:</strong> <code>section { background-color: white; border-radius: 5px; }</code></p>
+        <h2><code>div</code></h2>
+        <p>Es un contenedor genérico. Se usa comúnmente con CSS para dividir y posicionar elementos dentro de la página, se una un punto "." para usar la id de <code>&lt;div&gt;</code>.</p>
+        <p><strong>Ejemplo:</strong> <code>.contenido { display: flex; gap: 20px; }</code></p>
+        <h2><code>footer</code></h2>
+        <p>Representa el pie de página. En CSS puedes personalizar su fondo, color del texto, tamaño de fuente y espaciado.</p>
+        <p><strong>Ejemplo:</strong> <code>footer { text-align: center; padding: 15px; }</code></p>
+        <h2><code>a</code></h2>
+        <p>Es el enlace a otra página o sección. En CSS puedes modificar su color, quitar subrayado y agregar efectos al pasar el cursor.</p>
+        <p><strong>Ejemplo:</strong> <code>a:hover { color: #00695c; }</code></p>
+    </section>
+    <section class="bloque">
+        <h2><center>Código en CSS</center></h2>
+        <pre><code>
+            body {
+            background-color: #f4f4f4;
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            }
+
+            header {
+            background-color: #37474f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            }
+
+            nav {
+            background-color: #cfd8dc;
+            padding: 10px 0;
+            }
+
+            nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            }
+
+            nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            }
+
+            main {
+            padding: 20px;
+            }
+
+            section {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            }
+
+            footer {
+            background-color: #37474f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            }
+        </code></pre>
+    </section>
+  </div>
+</main>
+
+
   <footer>
     <p>&copy;2025 GatoTutoriales │ gatotutoriales@gmail.com</p>
   </footer>
+
 </body>
 </html>
