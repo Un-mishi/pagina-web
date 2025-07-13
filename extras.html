@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tutorial</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Información adicional y conceptos clave</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="extras.html">Conceptos Clave</a></li>
+      <li><a href="etiquetas.html">¿Qué son las etiquetas?</a></li>
+      <li><a href="estilos.html">¿Cómo aplicar estilos?</a></li>
+    </ul>
+  </nav>
+
+  <main>
+          <div class="contenido">
+        <section class="bloque">
+        <h2>¿Qué es un archivo .html?</h2>
+        <p>Un archivo <code>.html</code> es un documento de texto que contiene código HTML, el lenguaje que usan los navegadores para mostrar páginas web.</p>
+        <p>Visual Studio Code es un editor de código que facilita escribir y organizar este tipo de archivos, con colores y ayudas automáticas.</p>
+        <p><strong>Atajo útil:</strong> En VS Code, escribe <code>!</code> y presiona Enter para crear la estructura base HTML automáticamente.</p>
+        </section>
+
+        <section class="bloque">
+        <h2>Estructura básica de un documento HTML</h2>
+        <ul>
+            <li><code>&lt;html&gt;</code>: Raíz del documento.</li>
+            <li><code>&lt;head&gt;</code>: Información no visible para el usuario, como título y configuraciones.</li>
+            <li><code>&lt;title&gt;</code>: Texto que aparece en la pestaña del navegador.</li>
+            <li><code>&lt;body&gt;</code>: Contenido visible en la página.</li>
+        </ul>
+        <p>Esta estructura es la base mínima para que cualquier navegador pueda interpretar y mostrar tu página.</p>
+        </section>
+
+        <section class="bloque">
+        <h2>Encabezados en HTML</h2>
+        <p>HTML ofrece seis niveles de encabezados, del <code>&lt;h1&gt;</code> (más importante) al <code>&lt;h6&gt;</code> (menos importante). Sirven para organizar el contenido jerárquicamente.</p>
+        <p>Ejemplo visual:</p>
+        <h1>Encabezado h1</h1>
+        <h2>Encabezado h2</h2>
+        <h3>Encabezado h3</h3>
+        <h4>Encabezado h4</h4>
+        <h5>Encabezado h5</h5>
+        <h6>Encabezado h6</h6>
+        </section>
+
+        <section class="bloque">
+        <h2>Diferencia entre &lt;p&gt; y &lt;br&gt;</h2>
+        <p>La etiqueta <code>&lt;p&gt;</code> define un párrafo completo, con margen arriba y abajo.</p>
+        <p>La etiqueta <code>&lt;br&gt;</code> solo inserta un salto de línea sin crear un nuevo párrafo.</p>
+        <p><strong>Ejemplos:</strong></p>
+        <pre>
+        &lt;p&gt;Hola&lt;br&gt;mundo&lt;/p&gt;
+        </pre>
+        <p>Resultado: "Hola" y "mundo" en líneas separadas pero dentro del mismo párrafo.</p>
+        <pre>
+        &lt;p&gt;Hola mundo&lt;/p&gt;
+        </pre>
+        <p>Resultado: Texto continuo en un solo párrafo.</p>
+        </section>
+ 
+        <section class="bloque">
+        <h2>Etiqueta &lt;img&gt; y sus atributos</h2>
+        <p>La etiqueta <code>&lt;img&gt;</code> inserta imágenes. Sus atributos principales son:</p>
+        <ul>
+            <li><code>src</code>: Ruta o URL de la imagen.</li>
+            <li><code>alt</code>: Texto alternativo que se muestra si la imagen no carga.</li>
+            <li><code>width</code> y <code>height</code>: Ancho y alto de la imagen en píxeles.</li>
+        </ul>
+        <p>Ejemplo:</p>
+        <pre>
+        &lt;img src="foto.png" alt="Descripción de la imagen" width="300"&gt;
+        </pre>
+        <p>Si la imagen no carga, el navegador muestra el texto del atributo <code>alt</code>.</p>
+        <p><strong>Nota:</strong> Es buena práctica siempre incluir el atributo <code>alt</code> para accesibilidad.</p>
+        </section>
+        </div>
+  </main>
+  <footer>
+    <p>&copy;2025 GatoTutoriales │ gatotutoriales@gmail.com</p>
+  </footer>
+</body>
+</html>
